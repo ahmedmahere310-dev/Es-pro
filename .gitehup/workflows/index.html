@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Es Store | The Ultimate Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              darkBg: '#0a0a0a',
+              darkCard: '#141414',
+              gold: '#D4AF37'
+            },
+            fontFamily: {
+              cairo: ['Cairo', 'sans-serif'],
+              playfair: ['Playfair Display', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+         // Initialize EmailJS with public key (Replace if you have your own)
+         emailjs.init("Ru84Q4SIEnQZjbfL4");
+      })();
+   </script>
+   <style>
+     /* Custom Scrollbar */
+     ::-webkit-scrollbar { width: 6px; }
+     ::-webkit-scrollbar-track { background: transparent; }
+     ::-webkit-scrollbar-thumb { background: #888; border-radius: 3px; }
+     ::-webkit-scrollbar-thumb:hover { background: #555; }
+     body { font-family: 'Cairo', sans-serif; -webkit-tap-highlight-color: transparent; }
+     .logo-font { font-family: 'Playfair Display', serif; }
+   </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-qr-code": "https://esm.sh/react-qr-code@^2.0.18",
+    "react-hot-toast": "https://esm.sh/react-hot-toast@^2.6.0",
+    "firebase/": "https://esm.sh/firebase@^12.8.0/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white dark:bg-darkBg text-zinc-900 dark:text-white transition-colors duration-300">
+    <div id="root"></div>
+    <!-- Notice the DOT (.) before /index.tsx - This is crucial -->
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
