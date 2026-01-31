@@ -27,6 +27,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
       (function(){
+         // Initialize EmailJS with public key (Replace if you have your own)
          emailjs.init("Ru84Q4SIEnQZjbfL4");
       })();
    </script>
@@ -56,6 +57,7 @@
 </head>
   <body class="bg-white dark:bg-darkBg text-zinc-900 dark:text-white transition-colors duration-300">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <!-- Notice the DOT (.) before /index.tsx - This is crucial -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
